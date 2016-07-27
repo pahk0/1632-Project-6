@@ -186,11 +186,11 @@ public class Sieve {
 			toReturn = (int) Integer.parseInt(args[0]);
 			if (toReturn < 1) {
 				// User did not enter a valid integer
-				throw new IllegalArgumentException("User did not enter a valid integer.");
+				throw new IllegalArgumentException();
 			}
 		} else {
 			// User forgot to enter an argument!  
-			throw new IllegalArgumentException("User forgot to enter an argument!");
+			throw new IllegalArgumentException();
 		}
 		return toReturn;
 	}
